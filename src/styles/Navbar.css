@@ -1,0 +1,27 @@
+.Navbar_Main {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    color: white;
+}
+
+.Navbar_Container {
+    /* background-color: beige; */
+    width: 70%;
+    margin: 0 auto;
+}
+
+.NavList {
+    display: flex;
+    justify-content: end;
+    gap: 3em;
+    list-style: none;
+}
+
+.NavList li {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 600;
+}

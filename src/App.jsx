@@ -1,20 +1,26 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
-import About from "./Components/About";
 import Footer from "./Components/Footer";
 
 function App() {
+  const ProjectsRef = useRef(null);
+  const HomeRef = useRef(null);
+  const ContactRef = useRef(null);
+
   return (
-    <>
-      <Navbar />
-      <Home />
-      <Projects />
-      <About />
-      <Footer />
-    </>
+    <div>
+      <Navbar
+        ProjectsRef={ProjectsRef}
+        HomeRef={HomeRef}
+        ContactRef={ContactRef}
+      />
+      <Home ref={HomeRef} projectRef={ProjectsRef} />
+      <Projects ref={ProjectsRef} />
+      <Footer ref={ContactRef} />
+    </div>
   );
 }
 

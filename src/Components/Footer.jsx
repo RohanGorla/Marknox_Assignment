@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { forwardRef } from "react";
+import "../styles/Footer.css";
 
-function Footer() {
+function Footer(props, ref) {
   return (
-    <div>Footer</div>
-  )
+    <div ref={ref} className="footer">
+      Footer
+    </div>
+  );
 }
 
-export default Footer
+export default forwardRef(Footer);

@@ -1,0 +1,44 @@
+.Home {
+    position: relative;
+}
+
+.Home_Main {
+    height: 100vh;
+    background-image: url("../assets/Lamp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Home_Container {
+    /* background-color: red; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Home_Title {
+    font-size: 9em;
+    padding-left: 1.7em;
+    padding-top: .2em;
+}
+
+.Home_Quote {
+    font-size: 3em;
+    padding-left: 5.1em;
+    /* color: blue; */
+}
+
+.Down_Arrow {
+    position: absolute;
+    left: calc(50vw - 50px);
+    top: calc(100vh - 70px);
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Down_Arrow img {
+    width: 50%;
+}

@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { forwardRef } from "react";
+import "../styles/Projects.css";
 
-function Projects() {
-  return (
-    <div>Projects</div>
-  )
+function Projects(props, ref) {
+  return <div ref={ref} className="projects">Projects</div>;
 }
 
-export default Projects
+export default forwardRef(Projects);
