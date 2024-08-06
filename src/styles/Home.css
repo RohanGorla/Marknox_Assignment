@@ -69,7 +69,7 @@
 
 @keyframes MoveUpAndDown {
     0%, 100% {
-        top: calc(100vh - 100px);
+        top: calc(100vh - 90px);
     }
     50% {
         top: calc(100vh - 70px);
@@ -78,7 +78,12 @@
 
 .button a {
     text-decoration: none;
+    color: white;
+}
+
+.resume_button:hover a{
     color: black;
+    transition: all .5s ease;
 }
 
 .button {
@@ -96,6 +101,21 @@
     background-color: rgb(225, 207, 10);
     position: relative;
     transition: all .7s ease;
+}
+
+.resume_button {
+    background-color: black;
+    animation: resumeBounce 3s forwards infinite;
+    position: relative;
+}
+
+@keyframes resumeBounce {
+    0%, 10%, 20% {
+        bottom: 0px;
+    }
+    5%, 15% {
+        bottom: 10px;
+    }
 }
 
 @media (min-width: 700px) {
