@@ -2,7 +2,9 @@ import React from 'react'
 
 function TicTacToe() {
   return (
-    <div>TicTacToe</div>
+    <div className='TicTacToe_Main'>
+        
+    </div>
   )
 }
 
