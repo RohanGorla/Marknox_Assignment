@@ -66,9 +66,20 @@
     cursor: pointer;
 }
 
+.View_Project_Link {
+    text-decoration: none;
+    color: white;
+}
+
 .Project_Buttons button:hover {
     color: red;
-    transform: translateY(3px);
+    transform: translateY(-3px);
+    transition: transform .3s ease;
+}
+
+.Project_Buttons button:hover .View_Project_Link{
+    color: red;
+    transform: translateY(-3px);
     transition: transform .3s ease;
 }
 

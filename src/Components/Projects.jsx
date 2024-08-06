@@ -1,4 +1,5 @@
 import React, { forwardRef } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Projects.css";
 
 function Projects(props, ref) {
@@ -28,14 +29,16 @@ function Projects(props, ref) {
               Live Site
             </button>
             <button
-              onClick={() => {
-                window.open(
-                  "https://github.com/RohanGorla/LISTS_APP",
-                  "_blank"
-                );
-              }}
+            // onClick={() => {
+            //   window.open(
+            //     "https://github.com/RohanGorla/LISTS_APP",
+            //     "_blank"
+            //   );
+            // }}
             >
-              Code
+              <Link to={"/todo"} target="_blank" className="View_Project_Link">
+                View project
+              </Link>
             </button>
           </div>
         </div>
@@ -58,14 +61,20 @@ function Projects(props, ref) {
               Live Site
             </button>
             <button
-              onClick={() => {
-                window.open(
-                  "https://github.com/RohanGorla/Weather_App",
-                  "_blank"
-                );
-              }}
+            // onClick={() => {
+            //   window.open(
+            //     "https://github.com/RohanGorla/Weather_App",
+            //     "_blank"
+            //   );
+            // }}
             >
-              Code
+              <Link
+                to={"/weather"}
+                target="_blank"
+                className="View_Project_Link"
+              >
+                View project
+              </Link>
             </button>
           </div>
         </div>
@@ -90,14 +99,24 @@ function Projects(props, ref) {
               Live Site
             </button>
             <button
-              onClick={() => {
-                window.open(
-                  "https://github.com/RohanGorla/TIC_TAC_TOE",
-                  "_blank"
-                );
-              }}
+            onClick={()=>{
+              window.open(`${window.location.origin}/#/tictactoe`)
+            }}
+            // onClick={() => {
+            //   window.open(
+            //     "https://github.com/RohanGorla/TIC_TAC_TOE",
+            //     "_blank"
+            //   );
+            // }}
             >
-              Code
+              {/* <Link
+                to={"/tictactoe"}
+                target="_blank"
+                className="View_Project_Link"
+              >
+                View project
+              </Link> */}
+              View
             </button>
           </div>
         </div>

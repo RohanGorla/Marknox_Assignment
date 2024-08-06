@@ -7,7 +7,7 @@ function About() {
       <div className="About_Header">
         <h1>About me</h1>
       </div>
-      <p className="About_Para">
+      <p className="About_Para" style={{color:'black', fontWeight:'600'}}>
         Hello, I am Rohan. I'm a self taught web developer with a passion to
         build cool and unique websites. I've been learning web development from
         since November, 2023 and have been improving and refining my skills to
@@ -25,7 +25,7 @@ function About() {
         acquiring new knowledge and the satisfaction of seeing a completed
         project that I had built from scratch.
       </p>
-      <p className="About_Para">
+      <p className="About_Para" style={{color:'black', fontWeight:'600'}}>
         I primarily honed my skills through project-based learning, which
         reinforced my understanding and application of different technologies.
         However, staying motivated throughout the project duration, especially
