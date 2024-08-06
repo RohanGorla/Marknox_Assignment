@@ -1,0 +1,53 @@
+:root {
+    --Weather_Title: 35px;
+    --Weather_Para: 12px;
+}
+
+.Weather_Main {
+    background-color: rgb(33, 32, 32);
+    color: white;
+    min-height: 100vh;
+}
+
+.Weather_Header {
+    text-align: center;
+}
+
+.Weather_Header h1 {
+    font-size: var(--Weather_Title);
+}
+
+.Weather_Section {
+    padding: 2em 0;
+}
+
+.Weather_Desc {
+    width: 80vw;
+    max-width: 1100px;
+    margin: 2em auto;
+    font-size: var(--Weather_Para);
+}
+
+.Weather_Image {
+    width: 60vw;
+    max-width: 500px;
+    margin: 0em auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+@media (min-width:700px) {
+    :root {
+        --Weather_Title: 45px;
+        --Weather_Para: 15px;
+    }
+}
+
+@media (min-width:1100px) {
+    :root {
+        --Weather_Title: 55px;
+        --Weather_Para: 20px;
+    }
+}
