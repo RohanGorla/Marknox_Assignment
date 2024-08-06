@@ -9,7 +9,7 @@ function Projects(props, ref) {
       <div className="Projects_Container">
         <div className="Project_Card">
           <div className="Project_Details">
-            <h4 className="Project_Title">TODO LIST APP</h4>
+            <h4 className="Project_Title">TO-DO LIST APP</h4>
             <p className="Project_Description">
               A To-Do Lists application that enables users to create multiple
               lists and items. Provided user authentication for secure access.

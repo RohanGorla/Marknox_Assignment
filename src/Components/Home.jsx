@@ -12,7 +12,7 @@ function Home(props, ref) {
           <h2 className="Home_Quote">Frontend Web developer</h2>
           <p className="Home_Para">
             I like to build cool websites using my skills in Web development and
-            always in pirsuit to improve my skill set.
+            always in pursuit to improve my skill set.
           </p>
           <div className="Home_Buttons">
             <button
