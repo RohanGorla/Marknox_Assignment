@@ -18,7 +18,7 @@ import tailwind from "../assets/Tailwind_Icon.png";
 
 function Skills(props, ref) {
   return (
-    <>
+    <div className="Skills">
       <div ref={ref} className="content FrontEnd">
         <div className="labels">
           <div className="skills-label">
@@ -127,7 +127,7 @@ function Skills(props, ref) {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

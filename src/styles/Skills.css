@@ -1,3 +1,8 @@
+:root {
+    --Skill_Name: 9px;
+    --Skill_Title: 25px;
+}
+
 /* content */
 
 .content{
@@ -6,18 +11,20 @@
     align-items: center;
     color: white;
     background-color: rgb(27, 26, 26);
-    /* background-color: black; */
-    padding: 5em 0;
+    padding: 1em 0;
 }
 
 .FrontEnd{
     background-color: black;
-    /* background-color: rgb(27, 26, 26); */
+    padding-top: 5em;
 }
 
 .Database{
     background-color: black;
-    /* background-color: rgb(27, 26, 26); */
+}
+
+.Other {
+    padding-bottom: 5em;
 }
 
 /* labels */
@@ -30,6 +37,7 @@
 
 .skills-label h3{
     font-size: clamp(25px, 5vw + 1px, 40px);
+    font-size: var(--Skill_Title);
 }
 
 /* display */
@@ -43,7 +51,7 @@
 .skills-main{
     width: 100%;
     margin: 0 auto;
-    padding: 2%;
+    padding: .7em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,5 +72,20 @@
 
 .skill p{
     font-size: clamp(8.5px, 1vw,20px);
+    font-size: var(--Skill_Name);
     padding: 2% 0%;
+}
+
+@media (min-width:700px) {
+    :root {
+        --Skill_Name: 12px;
+        --Skill_Title: 30px;
+    }
+}
+
+@media (min-width:1100px) {
+    :root {
+        --Skill_Name: 20px;
+        --Skill_Title: 40px;
+    }
 }

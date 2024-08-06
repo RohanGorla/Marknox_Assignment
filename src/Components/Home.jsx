@@ -16,14 +16,14 @@ function Home(props, ref) {
           </p>
           <div className="Home_Buttons">
             <button
-              className="button"
+              className="button github_button"
               onClick={() => {
                 window.open("https://github.com/RohanGorla", "_blank");
               }}
             >
               Github
             </button>
-            <button className="button">
+            <button className="button resume_button">
               <a href={resume} download="RESUME-RohanGorla">
                 Resume
               </a>

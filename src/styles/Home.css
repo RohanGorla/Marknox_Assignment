@@ -57,6 +57,7 @@
 }
 
 .Scroll_Down {
+    animation: MoveUpAndDown 1.5s ease-in-out infinite;
     position: absolute;
     left: calc(50vw - 50px);
     top: calc(100vh - 70px);
@@ -64,6 +65,15 @@
     height: 50px;
     text-align: center;
     cursor: pointer;
+}
+
+@keyframes MoveUpAndDown {
+    0%, 100% {
+        top: calc(100vh - 100px);
+    }
+    50% {
+        top: calc(100vh - 70px);
+    }
 }
 
 .button a {
@@ -80,6 +90,12 @@
     border-style: none;
     margin-top: 1em;
     margin-right: .7em;
+}
+
+.button:hover {
+    background-color: rgb(225, 207, 10);
+    position: relative;
+    transition: all .7s ease;
 }
 
 @media (min-width: 700px) {
