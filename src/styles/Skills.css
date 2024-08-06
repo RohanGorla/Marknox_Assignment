@@ -1,0 +1,18 @@
+.Skills_Container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding: 3em 0;
+}
+
+.Skills {
+    text-align: center;
+}
+
+.Skills li {
+    list-style: none;
+    font-size: 1.3em;
+}

@@ -15,12 +15,12 @@ function Home(props, ref) {
       <div
         className="Down_Arrow"
         onClick={() => {
-          props.projectRef.current?.scrollIntoView({
+          props.SkillRef.current?.scrollIntoView({
             behavior: "smooth",
           });
         }}
       >
-        Scroll down
+        <p style={{fontWeight:'600'}}>Scroll down</p>
         <img src={DownArrow}></img>
       </div>
     </div>

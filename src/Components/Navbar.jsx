@@ -28,7 +28,9 @@ function Navbar(props) {
             </li>
             <li
               onClick={() => {
-                window.open(`${window.location.origin}/about`);
+                window.open(
+                  `${window.location.origin}/Marknox_Assignment/about`
+                );
               }}
             >
               About

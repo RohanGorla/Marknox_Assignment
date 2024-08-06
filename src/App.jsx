@@ -4,11 +4,13 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Projects from "./Components/Projects";
 import Footer from "./Components/Footer";
+import Skills from "./Components/Skills";
 
 function App() {
   const ProjectsRef = useRef(null);
   const HomeRef = useRef(null);
   const ContactRef = useRef(null);
+  const SkillRef = useRef(null);
 
   return (
     <div>
@@ -17,7 +19,8 @@ function App() {
         HomeRef={HomeRef}
         ContactRef={ContactRef}
       />
-      <Home ref={HomeRef} projectRef={ProjectsRef} />
+      <Home ref={HomeRef} SkillRef={SkillRef} />
+      {/* <Skills ref={SkillRef}/> */}
       <Projects ref={ProjectsRef} />
       <Footer ref={ContactRef} />
     </div>
