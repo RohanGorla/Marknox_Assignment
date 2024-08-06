@@ -27,7 +27,7 @@ function Projects(props, ref) {
                 );
               }}
             >
-              View Site
+              Live Site
             </button>
             <button
               onClick={() => {
@@ -37,7 +37,7 @@ function Projects(props, ref) {
                 );
               }}
             >
-              Git Repo
+              Code
             </button>
           </div>
         </div>
@@ -59,7 +59,7 @@ function Projects(props, ref) {
                 window.open("https://rohan-weather-app.netlify.app/", "_blank");
               }}
             >
-              View Site
+              Live Site
             </button>
             <button
               onClick={() => {
@@ -69,7 +69,7 @@ function Projects(props, ref) {
                 );
               }}
             >
-              Git Repo
+              Code
             </button>
           </div>
         </div>
@@ -91,7 +91,7 @@ function Projects(props, ref) {
                 window.open("https://rohan-tik-tac-toe.netlify.app/", "_blank");
               }}
             >
-              View Site
+              Live Site
             </button>
             <button
               onClick={() => {
@@ -101,7 +101,7 @@ function Projects(props, ref) {
                 );
               }}
             >
-              Git Repo
+              Code
             </button>
           </div>
         </div>

@@ -20,7 +20,7 @@ function App() {
         ContactRef={ContactRef}
       />
       <Home ref={HomeRef} SkillRef={SkillRef} />
-      {/* <Skills ref={SkillRef}/> */}
+      <Skills ref={SkillRef}/>
       <Projects ref={ProjectsRef} />
       <Footer ref={ContactRef} />
     </div>

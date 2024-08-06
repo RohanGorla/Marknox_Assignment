@@ -28,13 +28,8 @@ function Navbar(props) {
               Projects
             </li>
             <li
-            // onClick={() => {
-            //   window.open(
-            //     `${window.location.origin}/Marknox_Assignment/about`
-            //   );
-            // }}
             >
-              <Link to={"/about"} target="_blank">
+              <Link to={"/about"} target="_blank" id="Home_About">
                 About
               </Link>
             </li>
@@ -46,11 +41,6 @@ function Navbar(props) {
               }}
             >
               Contact
-            </li>
-            <li>
-              <a href={resume} download="RESUME-RohanGorla">
-                Resume
-              </a>
             </li>
           </ul>
         </nav>

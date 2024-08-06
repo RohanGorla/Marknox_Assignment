@@ -1,6 +1,7 @@
-.projects {
-    height: 100vh;
-    background-color: blue;
+:root {
+    --Project_Title: 30px;
+    --Project_Description : 20px;
+    --Project_Button: 16px;
 }
 
 .Projects_Container {
@@ -9,10 +10,37 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3%;
+    column-gap: 3%;
+    row-gap: 20px;
 }
 
 .Project_Card {
-    width: 30%;
     min-width: 330px;
+    width: 30%;
+    max-width: 450px;
+    background-color: beige;
+    border-radius: 20px;
+    padding: 1em 1em;
+}
+
+.Project_Title {
+    font-size: var(--Project_Title);
+    padding: .5em 0;
+    text-align: center;
+}
+
+.Project_Description {
+    font-size: var(--Project_Description);
+    margin-bottom: 1em;
+}
+
+.Project_Buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.Project_Buttons button {
+    font-size: var(--Project_Button);
+    padding: .5em .7em;
 }
