@@ -1,5 +1,5 @@
 import React, { forwardRef } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar(props) {
@@ -27,13 +27,15 @@ function Navbar(props) {
               Projects
             </li>
             <li
-              onClick={() => {
-                window.open(
-                  `${window.location.origin}/Marknox_Assignment/about`
-                );
-              }}
+            // onClick={() => {
+            //   window.open(
+            //     `${window.location.origin}/Marknox_Assignment/about`
+            //   );
+            // }}
             >
-              About
+              <Link to={"/Marknox_Assignment/about"} target="_blank">
+                About
+              </Link>
             </li>
             <li
               onClick={() => {
