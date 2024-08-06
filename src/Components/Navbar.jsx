@@ -1,5 +1,6 @@
 import React, { forwardRef } from "react";
 import { NavLink, Link } from "react-router-dom";
+import resume from "../ROHAN.pdf";
 import "../styles/Navbar.css";
 
 function Navbar(props) {
@@ -45,6 +46,11 @@ function Navbar(props) {
               }}
             >
               Contact
+            </li>
+            <li>
+              <a href={resume} download="RESUME-RohanGorla">
+                Resume
+              </a>
             </li>
           </ul>
         </nav>
