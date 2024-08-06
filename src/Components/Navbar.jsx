@@ -33,7 +33,7 @@ function Navbar(props) {
             //   );
             // }}
             >
-              <Link to={"/Marknox_Assignment/about"} target="_blank">
+              <Link to={"/about"} target="_blank">
                 About
               </Link>
             </li>
