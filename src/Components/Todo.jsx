@@ -10,6 +10,15 @@ function Todo() {
       <div className="Todo_Header">
         <h1>PERSONAL TODO APP</h1>
       </div>
+      <div className="Code_Button">
+        <button
+          onClick={() => {
+            window.open("https://github.com/RohanGorla/LISTS_APP", "_blank");
+          }}
+        >
+          View code
+        </button>
+      </div>
       <div className="Todo_Section">
         <p className="Todo_Desc">
           I developed a To-Do Lists application using React.js, focusing on

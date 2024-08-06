@@ -3,6 +3,27 @@
     --Weather_Para: 12px;
 }
 
+.Code_Button {
+    display: flex;
+    justify-content: end;
+}
+
+.Code_Button button {
+    margin-right: 10vw;
+    margin-top: 2em;
+    cursor: pointer;
+    font-size: var(--Home_Button);
+    font-weight: 600;
+    padding: .5em 1.5em;
+    border-radius: 7px;
+    border-style: none;
+}
+
+.Code_Button button:hover {
+    background-color: black;
+    color: white;
+}
+
 .Weather_Main {
     background-color: rgb(33, 32, 32);
     color: white;

@@ -29,16 +29,13 @@ function Projects(props, ref) {
               Live Site
             </button>
             <button
-            // onClick={() => {
-            //   window.open(
-            //     "https://github.com/RohanGorla/LISTS_APP",
-            //     "_blank"
-            //   );
-            // }}
+              onClick={() => {
+                window.open(
+                  `${window.location.origin}/Marknox_Assignment/#/todo`
+                );
+              }}
             >
-              <Link to={"/todo"} target="_blank" className="View_Project_Link">
-                View project
-              </Link>
+              View project
             </button>
           </div>
         </div>
@@ -61,20 +58,13 @@ function Projects(props, ref) {
               Live Site
             </button>
             <button
-            // onClick={() => {
-            //   window.open(
-            //     "https://github.com/RohanGorla/Weather_App",
-            //     "_blank"
-            //   );
-            // }}
+              onClick={() => {
+                window.open(
+                  `${window.location.origin}/Marknox_Assignment/#/weather`
+                );
+              }}
             >
-              <Link
-                to={"/weather"}
-                target="_blank"
-                className="View_Project_Link"
-              >
-                View project
-              </Link>
+              View project
             </button>
           </div>
         </div>
@@ -104,21 +94,8 @@ function Projects(props, ref) {
                   `${window.location.origin}/Marknox_Assignment/#/tictactoe`
                 );
               }}
-              // onClick={() => {
-              //   window.open(
-              //     "https://github.com/RohanGorla/TIC_TAC_TOE",
-              //     "_blank"
-              //   );
-              // }}
             >
-              {/* <Link
-                to={"/tictactoe"}
-                target="_blank"
-                className="View_Project_Link"
-              >
-                View project
-              </Link> */}
-              View
+              View project
             </button>
           </div>
         </div>

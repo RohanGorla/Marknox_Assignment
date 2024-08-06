@@ -11,6 +11,15 @@ function TicTacToe() {
       <div className="Tic_Header">
         <h1>TIC TAC TOE GAME</h1>
       </div>
+      <div className="Code_Button">
+        <button
+          onClick={() => {
+            window.open("https://github.com/RohanGorla/TIC_TAC_TOE", "_blank");
+          }}
+        >
+          View code
+        </button>
+      </div>
       <div className="Tic_Section">
         <p className="Tic_Desc">
           I developed a Tic-Tac-Toe game using React.js, focusing on

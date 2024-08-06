@@ -8,7 +8,16 @@ function Weather() {
   return (
     <div className="Weather_Main">
       <div className="Weather_Header">
-        <h1>PERSONAL TODO APP</h1>
+        <h1>WEATHER APP</h1>
+      </div>
+      <div className="Code_Button">
+        <button
+          onClick={() => {
+            window.open("https://github.com/RohanGorla/Weather_App", "_blank");
+          }}
+        >
+          View code
+        </button>
       </div>
       <div className="Weather_Section">
         <p className="Weather_Desc">
