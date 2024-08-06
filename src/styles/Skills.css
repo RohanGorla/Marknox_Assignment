@@ -6,15 +6,18 @@
     align-items: center;
     color: white;
     background-color: rgb(27, 26, 26);
+    /* background-color: black; */
     padding: 5em 0;
 }
 
 .FrontEnd{
     background-color: black;
+    /* background-color: rgb(27, 26, 26); */
 }
 
 .Database{
     background-color: black;
+    /* background-color: rgb(27, 26, 26); */
 }
 
 /* labels */

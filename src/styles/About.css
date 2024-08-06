@@ -1,19 +1,38 @@
-.Skills_Container {
-    width: 80%;
-    margin: 0 auto;
-    background-color: beige;
-    display: flex;
-    justify-content: center;
-    gap: 5em;
-    padding: 3em 0;
+:root {
+    --About_Title: 35px;
+    --About_Para: 12px;
 }
 
-.Skills li {
-    list-style: none;
-    font-size: 1.3em;
+.About_Main {
+    background-image: linear-gradient(to right top, #0c3870, #004c83, #006196, #0076a6, #008bb5);
+    min-height: 100vh;
+    color: white;
+    padding: 2em 0;
 }
 
-.Skills_Card {
-    background-color: silver;
+.About_Header h1 {
     text-align: center;
+    font-size: var(--About_Title);
+}
+
+.About_Para {
+    font-size: var(--About_Para);
+    width: 60vw;
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+@media (min-width:700px) {
+    :root {
+        --About_Title: 45px;
+        --About_Para: 15px;
+    }
+}
+
+@media (min-width:1100px) {
+    :root {
+        --About_Title: 55px;
+        --About_Para: 20px;
+    }
 }

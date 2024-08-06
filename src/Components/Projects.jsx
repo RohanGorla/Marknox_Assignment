@@ -4,18 +4,16 @@ import "../styles/Projects.css";
 function Projects(props, ref) {
   return (
     <div ref={ref} className="projects">
-    <h2>Projects</h2>
+      <h2 className="Projects_Main_Title">Projects</h2>
       <div className="Projects_Container">
         <div className="Project_Card">
           <div className="Project_Details">
             <h4 className="Project_Title">TODO LIST APP</h4>
             <p className="Project_Description">
-              A To-Do Lists application that enablex users to
-              create multiple lists and items. Implemented user authentication
-              for secure access. Managed state with "useState" and data fetching
-              with "useEffect" from an AWS MySQL database. Employed CRUD
-              operations and ensured a responsive design for both mobile and
-              desktop users.
+              A To-Do Lists application that enables users to create multiple
+              lists and items. Provided user authentication for secure access.
+              The data is fetched from an AWS MySQL database using CRUD
+              operations. The design is responsive for usage on any device.
             </p>
           </div>
           <div className="Project_Buttons">
@@ -45,12 +43,10 @@ function Projects(props, ref) {
           <div className="Project_Details">
             <h4 className="Project_Title">Weather App</h4>
             <p className="Project_Description">
-              Built a weather app using React.js to show accurate weather data
-              based on user input. Utilized the "useEffect" hook for API data
-              fetching and an NPM package for location names. Managed user data
-              with "useState" and displayed current conditions and hourly
-              forecasts. Designed to be fully responsive for mobile and desktop
-              devices.
+              A fully responsive weather application that shows accurate weather
+              data based on user input. Used an NPM package for location names
+              and weather data is fetched from an API. It displayes current
+              weather conditions and hourly forecasts.
             </p>
           </div>
           <div className="Project_Buttons">

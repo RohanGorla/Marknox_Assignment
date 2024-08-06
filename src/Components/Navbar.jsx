@@ -1,6 +1,5 @@
-import React, { forwardRef, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import resume from "../ROHAN.pdf";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar(props) {
@@ -24,6 +23,7 @@ function Navbar(props) {
                 props.HomeRef.current?.scrollIntoView({
                   behavior: "smooth",
                 });
+                setShow(!show);
               }}
             >
               Home
@@ -33,6 +33,7 @@ function Navbar(props) {
                 props.ProjectsRef.current?.scrollIntoView({
                   behavior: "smooth",
                 });
+                setShow(!show);
               }}
             >
               Projects
@@ -47,6 +48,7 @@ function Navbar(props) {
                 props.ContactRef.current?.scrollIntoView({
                   behavior: "smooth",
                 });
+                setShow(!show);
               }}
             >
               Contact
