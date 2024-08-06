@@ -3,8 +3,9 @@ import "../styles/Skills.css";
 
 function Skills(props, ref) {
   return (
-    <div className="Skills" ref={ref}>
-      <div className="Skills_Container">
+    // <div className="Skills" ref={ref}>
+    {
+      /* <div className="Skills_Container">
         <div className="Frontend_Skills">
           <h3>Frontend</h3>
           <ul className="Skills">
@@ -30,8 +31,9 @@ function Skills(props, ref) {
             <li>Responsive Design</li>
           </ul>
         </div>
-      </div>
-    </div>
+      </div> */
+    }
+    // </div>
   );
 }
 
