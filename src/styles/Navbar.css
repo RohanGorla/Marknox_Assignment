@@ -1,3 +1,7 @@
+:root {
+    --Navlink: 14px;
+}
+
 .Navbar_Main {
     background-color: rgb(19, 18, 18);
     position: fixed;
@@ -5,23 +9,30 @@
     top: 0;
     z-index: 3;
     color: white;
+    padding: 2em 0;
 }
 
 .Navbar_Container {
-    /* background-color: beige; */
     width: 70%;
     margin: 0 auto;
 }
 
 .NavList {
     display: flex;
-    justify-content: end;
-    gap: 3em;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
     list-style: none;
+    text-align: center;
+}
+
+.Nav_Hidden {
+    visibility: hidden;
+    height: 0;
 }
 
 .NavList li {
-    font-size: 1.2em;
+    font-size: var(--Navlink);
     font-family: sans-serif;
     font-weight: 600;
     cursor: pointer;
@@ -38,4 +49,68 @@
 
 #Home_About:hover {
     color: red;
+}
+
+/* Hamburger button */
+
+.hamburger-btn {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 15%;
+    left: 5%;
+    background-color: rgb(48, 45, 45);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.hamburger {
+    display: block;
+    width: 50%;
+    height: 4px;
+    margin: 18px  auto;
+    background-color: red;
+}
+
+.hamburger::before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    transform: translateY(-8px);
+    background-color: red;
+}
+
+.hamburger::after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    transform: translateY(4px);
+    background-color: red;
+}
+
+@media (min-width:700px) {
+
+    :root {
+        --Navlink: 20px;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+
+    .NavList {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 3em;
+        list-style: none;
+    }
+
+    .Nav_Hidden {
+        visibility: visible;
+    }
 }

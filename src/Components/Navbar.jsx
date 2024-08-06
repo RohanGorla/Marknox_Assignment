@@ -1,14 +1,24 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import resume from "../ROHAN.pdf";
 import "../styles/Navbar.css";
 
 function Navbar(props) {
+  const [show, setShow] = useState(false);
+
   return (
     <div className="Navbar_Main">
       <div className="Navbar_Container">
-        <nav style={{ padding: "1em 0" }}>
-          <ul className="NavList">
+        <nav>
+          <div
+            className="hamburger-btn"
+            onClick={() => {
+              setShow(!show);
+            }}
+          >
+            <span className="hamburger"></span>
+          </div>
+          <ul className={show ? "NavList" : "NavList Nav_Hidden"}>
             <li
               onClick={() => {
                 props.HomeRef.current?.scrollIntoView({
@@ -27,8 +37,7 @@ function Navbar(props) {
             >
               Projects
             </li>
-            <li
-            >
+            <li>
               <Link to={"/about"} target="_blank" id="Home_About">
                 About
               </Link>
